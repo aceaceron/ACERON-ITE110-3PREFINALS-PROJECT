@@ -198,6 +198,38 @@ header .containerHeader {
     transition: transform 0.3s ease;
 }
 
+#overview6 {
+    background-color: black;
+    height: 700px;
+}
+#overview6 h1 {
+    font-size: 50pt;
+    color: white;
+    text-align: left;
+    margin-left: 50pt;
+}
+#overview6 p {
+    margin-left: 70pt;
+    width: 300pt;
+    color: white;
+}
+#overview6 .overview6-content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+#overview6 .overview6-content img {
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+#overview6 .overview6-content video {
+    margin: 0 auto;
+    width: 300px;
+    display: block;
+    border-radius: 15px;
+}
 footer {
     background-color: black;
     padding-bottom: 20px;
