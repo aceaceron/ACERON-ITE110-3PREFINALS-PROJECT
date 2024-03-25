@@ -3,15 +3,18 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+.web-logo {
+    width: 150px;
+    margin-left: 30px;
+}
 body {
     font-family: NSimSun;
-    letter-spacing: 1px;
     background-color: white;
 }
 
 header {
     padding: 20px 0;
+    font-family: NSimSun;
 }
 header .containerHeader {
     display: flex;
@@ -25,6 +28,7 @@ header .containerHeader {
 }
 .containerHeader {
     width: 100%;
+    height: 50px;
     margin: 0 auto;
 }
 .containerHeader h1 a {
@@ -50,7 +54,7 @@ header .containerHeader {
     position: absolute;
     background-color: white;
     width: 100%;
-    top: 31px;
+    top: 25px;
     z-index: -1;
 }
 .dropdown-content a {
@@ -61,8 +65,58 @@ header .containerHeader {
     border-bottom: 1px solid #ccc;
 }
 
-
-
+.bg-image {
+    width: 100%;
+}
+#overview1 {
+    padding-top: 50px;
+    background-color: white;
+}
+#overview1 .overview1-content1 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: orangered;
+    padding-bottom: 50px;
+}
+#overview1 .overview1-content1 .overview1-content2 {
+    width: 50%;
+}
+#overview1 .overview1-content1 .overview1-content2 h1 {
+    font-size: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-weight: bolder;
+}
+#overview1 .overview1-content1 .overview1-content2 p {
+    font-size: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+#overview1 .overview1-content1 .overview1-content2 ul li {
+    font-size: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    list-style: none;
+}
+#overview1 .overview1-content1 .overview1-content2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px white;
+}
+#overview1 .overview1-content1 .overview1-content2 video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px white;
+}
 footer {
     background-color: black;
     padding-bottom: 20px;

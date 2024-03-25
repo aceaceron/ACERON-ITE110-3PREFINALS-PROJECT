@@ -3,15 +3,18 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+.web-logo {
+    width: 150px;
+    margin-left: 30px;
+}
 body {
     font-family: NSimSun;
-    letter-spacing: 1px;
     background-color: white;
 }
 
 header {
     padding: 20px 0;
+    font-family: NSimSun;
 }
 header .containerHeader {
     display: flex;
@@ -25,6 +28,7 @@ header .containerHeader {
 }
 .containerHeader {
     width: 100%;
+    height: 50px;
     margin: 0 auto;
 }
 .containerHeader h1 a {
@@ -50,7 +54,7 @@ header .containerHeader {
     position: absolute;
     background-color: white;
     width: 100%;
-    top: 30px;
+    top: 25px;
     z-index: -1;
 }
 .dropdown-content a {
@@ -60,6 +64,39 @@ header .containerHeader {
     display: block;
     border-bottom: 1px solid #ccc;
 }
+.buy-link {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 12.5%;
+    z-index: 9999;
+    display: flex;
+}
+.buy-link .buy-link-content {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.buy-link p {
+    text-align: center;
+    font-size: 15px;
+    color: black;
+    font-weight: bolder;
+}
+.buy-link .buy-link-content img {
+    border-radius: 15px;
+    width: 100px;
+    border: 3px solid white;
+}
+.hidden {
+    display: none;
+}
+
 
 .containerBody {
     margin: 10px;
@@ -77,8 +114,6 @@ header .containerHeader {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 150px; 
-    padding-right: 150px; 
 }
 #overview2 {
     background-color: black;
@@ -185,11 +220,9 @@ header .containerHeader {
     padding: 20px;
     margin-top: 20px;
 }
-  
 #overview5 .overview5-content .gallery-item {
     overflow: hidden;
 }
-  
 #overview5 .overview5-content .gallery-item img {
     width: 100%;
     height: auto;
@@ -197,39 +230,215 @@ header .containerHeader {
     border-radius: 5px;
     transition: transform 0.3s ease;
 }
-
 #overview6 {
-    background-color: black;
-    height: 700px;
+    text-align: center; 
 }
 #overview6 h1 {
-    font-size: 50pt;
-    color: white;
-    text-align: left;
-    margin-left: 50pt;
-}
-#overview6 p {
-    margin-left: 70pt;
-    width: 300pt;
-    color: white;
+    font-size: 50px;
 }
 #overview6 .overview6-content {
-    width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap; 
+    justify-content: center; 
 }
-#overview6 .overview6-content img {
-    width: 300px;
-    display: block;
-    margin: 0 auto;
+#overview6 .media-description {
+    width: 250px;
+    margin: 0 10px;
+}
+#overview6 .media-description img,
+#overview6 .media-description video {
+    width: 100%;
     border-radius: 15px;
+    margin-bottom: 20px;
 }
-#overview6 .overview6-content video {
-    margin: 0 auto;
+#overview7 {
+    padding-top: 30px;
+    overflow-x: hidden; 
+}
+
+#overview7 .overview7-content {
+    display: flex;
+    animation: scroll 20s linear infinite; 
+}
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%); 
+    }
+}
+#overview7 .overview7-content2 {
+    h1 {
+        font-size: 40pt;
+    }
+    p {
+        margin-left: 100px;
+    }
+}
+#overview7 .overview7-content3 {
+    flex: 0 0 auto;
     width: 300px;
-    display: block;
-    border-radius: 15px;
+    height: auto;
+    object-fit: cover;
+    margin: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+    display: flex;
+    overflow: hidden;
 }
+#overview7 .overview7-content3 img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+}
+#overview7 .overview7-content4 {
+    display: flex;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+#overview7 .overview7-content5 {
+    width: 33.3%;
+    padding: 1%
+}
+#overview7 .overview7-content5 p {
+    text-align: justify;
+}
+#overview8 {
+    display: flex;
+    background-color: black;
+    color: white;
+}
+#overview8 .overview8-content {
+    width: 100%;
+    padding: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+#overview8 .overview8-content .overview8-content2 {
+    width: 50%;
+    float: left;
+    padding: 1%;
+    text-align: justify;
+    justify-content: center;
+    align-items: center;
+}
+#overview8 .overview8-content .overview8-content2 h1 {
+    font-size: 40pt;
+}
+#overview8 .overview8-content .overview8-content2 p {
+    font-size: 20pt;
+    padding: 1%;
+}
+#overview8 .overview8-content .overview8-content2 video{
+    width: 100%;
+    right: 0;
+    float: right;
+}
+#overview9 {
+    display: flex;
+    background-color: black;
+    color: white;
+}
+#overview9 .overview9-content {
+    width: 100%;
+    padding: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+#overview9 .overview9-content .overview9-content2 {
+    width: 33.3%;
+    float: left;
+    padding: 1%;
+    text-align: justify;
+    font-size: 20px;
+}
+#overview9 .overview9-content .overview9-content2 h1 {
+    text-align: left;
+    font-size: 50px;
+    padding-left: 0;
+}
+#overview9 .overview9-content .overview9-content2 img{
+    width: 50%;
+    right: 0;
+    float: right;
+    margin-right: 30px;
+}
+#specs {
+    padding-top: 2%;
+    background-color: white;
+}
+#specs .specs-content1 {
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+#specs .specs-content1 h1 {
+    text-align: left;
+    margin-left: 5%;
+}
+#specs .specs-header {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-align: left;
+    padding-left: 5%;
+    padding: 0.5%;
+    background-color: lightgray;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+#specs .specs-header img {
+    margin-left: 5%;
+}
+#specs .specs-header h3 {
+    margin-left: 2%;
+    font-size: 30px;
+}
+#specs .specs-details {
+    display: none;
+    line-height: 200%;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: larger;
+    margin-top: 3%;
+}
+#specs .specs-details p {
+    margin-top: 2%;
+}
+#processor-icon, #camera-icon, #display-icon, #capacity-icon, #os-icon, #battery-icon, #dimension-icon, #inthebox-icon {
+    font-size: 40px;
+    order: 2;
+    margin-right: 2%;
+}
+.specs-details .dimension-images img{
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%
+}
+#buynow {
+    background-color: white;
+    padding: 10px
+    text-align: center;
+    font-size: 30px;
+}
+#buynow .buynow {
+    display: flex;
+    padding: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+#buynow .buynow .buynow2 img{
+    width: 50%;
+    height: 100%;
+    border-radius: 30px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
 footer {
     background-color: black;
     padding-bottom: 20px;
