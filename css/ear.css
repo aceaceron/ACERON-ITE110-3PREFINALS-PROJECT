@@ -8,7 +8,7 @@
     margin-left: 30px;
 }
 body {
-    font-family: NSimSun;
+    font-family: NSimSun, SimSun;
     background-color: white;
 }
 .buy-link {
@@ -127,7 +127,9 @@ header .containerHeader {
 .hidden {
     display: none;
 }
-
+.bg-image {
+    width: 100%;
+}
 #overview1 {
     padding-top: 50px;
     background-color: black;

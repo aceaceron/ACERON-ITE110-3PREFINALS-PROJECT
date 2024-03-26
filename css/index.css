@@ -8,11 +8,10 @@
     margin-left: 30px;
 }
 body {
-    font-family: NSimSun;
-    letter-spacing: 1px;
+    font-family: NSimSun, SimSun;
     background-color: white;
+    letter-spacing: 1px;
 }
-
 header {
     padding: 20px 0;
 }
