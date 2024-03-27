@@ -425,6 +425,9 @@ header .containerHeader {
     text-align: center;
     font-size: 30px;
 }
+#buynow img {
+    width:100%;
+}
 #buynow .buynow {
     display: flex;
     padding: 50px;

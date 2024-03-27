@@ -97,6 +97,9 @@ header .containerHeader {
     display: none;
 }
 
+.bg-image {
+    width: 100%;
+}
 #overview1 {
     background-color: lightgray;
 }
